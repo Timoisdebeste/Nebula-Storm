@@ -20,6 +20,15 @@ public class Plasma : MonoBehaviour
         rb.velocity = new Vector2(0, 1) * moveSpeed;
     }
 
+    private void FixedUpdate()
+    {
+        //Vector2 pos = transform.position;
+
+        //float sin = Mathf.Sin(pos.y);
+        //pos.x = sin;
+
+        //transform.position = pos;
+    }
     //hit detection 
     void OnCollisionEnter2D(Collision2D col)
     {
