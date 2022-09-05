@@ -58,7 +58,7 @@ public class EnemyMissle : MonoBehaviour
         //when it hits the player
         if (col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<SpaceShip>().TakeDamage(20);
+            col.gameObject.GetComponent<PlayerHealth>().TakeDamage(20);
             Die();
         }
     }

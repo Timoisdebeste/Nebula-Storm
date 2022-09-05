@@ -12,7 +12,11 @@ public class Timer : MonoBehaviour
 
     public Text countdownText;
 
+    public bool seprateLevel = false;
     private int nextSceneToLoad;
+
+    public GameObject completeLevelUI;
+    public GameObject completeLevelEnd;
 
     // Start is called before the first frame update
     void Start()
@@ -28,11 +32,22 @@ public class Timer : MonoBehaviour
 
         countdownText.text = currentTime.ToString("0");
 
-        //print (currentTime);
-        if (currentTime <= 0)
+        if (seprateLevel)
         {
-            currentTime = 0;
-            SceneManager.LoadScene(nextSceneToLoad);
+            //print (currentTime);
+            if (currentTime <= 0)
+            {
+                currentTime = 0;
+                SceneManager.LoadScene(nextSceneToLoad);
+            }
+        } else {
+            //print (currentTime);
+            if (currentTime <= 0)
+            {
+                currentTime = 0;
+                completeLevelUI.SetActive(true);
+                completeLevelEnd.SetActive(false);
+            }
         }
     }
 }

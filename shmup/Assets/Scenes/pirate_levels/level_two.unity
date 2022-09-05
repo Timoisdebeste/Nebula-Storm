@@ -1241,6 +1241,14 @@ PrefabInstance:
       propertyPath: startingTime
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 9665868999647510, guid: 7766fca7c0831344cb3c381a71dd62a0, type: 3}
+      propertyPath: sepratelevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9665868999647510, guid: 7766fca7c0831344cb3c381a71dd62a0, type: 3}
+      propertyPath: seprateLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9665868999647513, guid: 7766fca7c0831344cb3c381a71dd62a0, type: 3}
       propertyPath: m_Name
       value: Timer

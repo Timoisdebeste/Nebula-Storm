@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 1192658406016875696}
   - component: {fileID: 1192658406016875699}
   - component: {fileID: 6940545833234639431}
+  - component: {fileID: 5900437118139401402}
   m_Layer: 8
   m_Name: PfBigShot
   m_TagString: Player
@@ -274,14 +275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eed5fab6c035f7498fecfdc0c6f2cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 3654979507035250188}
-  moveSpeed: 10
   rb: {fileID: 0}
+  moveSpeed: 10
   movoable: 1
-  ondeathUI: {fileID: 0}
-  ondeath: {fileID: 0}
 --- !u!50 &1192658406016875696
 Rigidbody2D:
   serializedVersion: 4
@@ -348,6 +344,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5900437118139401402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192658406016875703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3fdb9c43f8903c429e4140047c5f60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 3654979507035250188}
+  moveSpeed: 10
 --- !u!1 &1267085899541321895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,12 +2205,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c27051de4b6901e4dbc4fb311321b281, type: 3}
---- !u!224 &3654979507897602106 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2464653167763661546, guid: c27051de4b6901e4dbc4fb311321b281,
-    type: 3}
-  m_PrefabInstance: {fileID: 1192658405438370512}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3654979507035250188 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2464653166313123036, guid: c27051de4b6901e4dbc4fb311321b281,
@@ -2211,3 +2217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167e9d437edbfdb41a5155bf6b055887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &3654979507897602106 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2464653167763661546, guid: c27051de4b6901e4dbc4fb311321b281,
+    type: 3}
+  m_PrefabInstance: {fileID: 1192658405438370512}
+  m_PrefabAsset: {fileID: 0}

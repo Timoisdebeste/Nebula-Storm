@@ -29,7 +29,7 @@ public class BasicEnemy: MonoBehaviour
     {   
         if (col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<SpaceShip>().TakeDamage(50);
+            col.gameObject.GetComponent<PlayerHealth>().TakeDamage(50);
             //col.gameObject.GetComponent<Numbers>().GainCash(100);
             Die();
         }

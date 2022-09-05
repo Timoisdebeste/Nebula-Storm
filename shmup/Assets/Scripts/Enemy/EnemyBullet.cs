@@ -26,7 +26,7 @@ public class EnemyBullet : MonoBehaviour
         //when it hits the player
         if (col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<SpaceShip>().TakeDamage(10);
+            col.gameObject.GetComponent<PlayerHealth>().TakeDamage(10);
         }
         //when it hits the top of the screen
         if (col.gameObject.name == "Top") {}

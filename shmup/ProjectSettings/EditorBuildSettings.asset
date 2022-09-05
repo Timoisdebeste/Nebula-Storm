@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pirate_levels/pirate_boss_one.unity
     guid: 30a4ae197684b90419c7bd1bba43ffc9
+  - enabled: 1
+    path: Assets/Scenes/multiplayer/JoinHostLobby.unity
+    guid: ef73f71ade04fb74f8f5ffea5ef0e9d0
+  - enabled: 1
+    path: Assets/Scenes/multiplayer/Lobby.unity
+    guid: d95fbad3ffa9976499a73dda43b02262
   m_configObjects: {}

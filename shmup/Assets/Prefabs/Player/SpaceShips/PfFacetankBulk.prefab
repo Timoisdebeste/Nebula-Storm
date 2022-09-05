@@ -1657,6 +1657,7 @@ GameObject:
   - component: {fileID: 5940776877404390827}
   - component: {fileID: 5351336140476807573}
   - component: {fileID: -7361907357421091208}
+  - component: {fileID: 7650960194697819322}
   m_Layer: 8
   m_Name: PfFacetankBulk
   m_TagString: Player
@@ -1795,14 +1796,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eed5fab6c035f7498fecfdc0c6f2cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 150
-  currentHealth: 0
-  healthBar: {fileID: 6686432819631139338}
-  moveSpeed: 8
   rb: {fileID: 0}
+  moveSpeed: 8
   movoable: 1
-  ondeathUI: {fileID: 0}
-  ondeath: {fileID: 0}
 --- !u!95 &-7361907357421091208
 Animator:
   serializedVersion: 3
@@ -1822,6 +1818,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7650960194697819322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8969577496489793095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3fdb9c43f8903c429e4140047c5f60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 400
+  currentHealth: 0
+  healthBar: {fileID: 6686432819631139338}
+  moveSpeed: 10
 --- !u!1 &9170569756550791690
 GameObject:
   m_ObjectHideFlags: 0

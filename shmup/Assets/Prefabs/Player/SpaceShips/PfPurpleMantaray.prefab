@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 325962105699922490}
   - component: {fileID: 8812584620341253702}
   - component: {fileID: 9214555302522283043}
+  - component: {fileID: 271843895641993465}
   m_Layer: 8
   m_Name: PfPurpleMantaray
   m_TagString: Player
@@ -429,14 +430,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eed5fab6c035f7498fecfdc0c6f2cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 2788352905378492312}
-  moveSpeed: 10
   rb: {fileID: 0}
+  moveSpeed: 10
   movoable: 1
-  ondeathUI: {fileID: 0}
-  ondeath: {fileID: 0}
 --- !u!95 &8812584620341253702
 Animator:
   serializedVersion: 3
@@ -470,6 +466,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MycashText: {fileID: 0}
   CashNum: 0
+--- !u!114 &271843895641993465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325962105699922495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3fdb9c43f8903c429e4140047c5f60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 2788352905378492312}
+  moveSpeed: 10
 --- !u!1 &325962105777536880
 GameObject:
   m_ObjectHideFlags: 0

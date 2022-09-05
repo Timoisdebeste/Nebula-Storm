@@ -22,4 +22,8 @@ public class MainMenu : MonoBehaviour
         Debug.Log("they have QUIT");
         Application.Quit();
     }
+    public void MultiPlayer()
+    {
+        SceneManager.LoadScene(8);
+    }
 }

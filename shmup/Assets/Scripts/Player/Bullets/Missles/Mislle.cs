@@ -42,6 +42,7 @@ public class Mislle : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //if ()
         target = GameObject.FindGameObjectWithTag("Enemy").transform;
 
         Vector2 direction = (Vector2)target.position - rb.position;

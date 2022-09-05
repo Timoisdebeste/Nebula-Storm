@@ -447,7 +447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5290643064690110989}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.725, y: 17, z: 0}
+  m_LocalPosition: {x: 0, y: 15.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5290643065013162028}
@@ -992,6 +992,7 @@ GameObject:
   - component: {fileID: 5290643065126256457}
   - component: {fileID: 5290643065126256458}
   - component: {fileID: 4795325489509991235}
+  - component: {fileID: 1181526073199717607}
   m_Layer: 8
   m_Name: PfBlueBold
   m_TagString: Player
@@ -1084,14 +1085,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eed5fab6c035f7498fecfdc0c6f2cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 7734957825046758584}
-  moveSpeed: 10
   rb: {fileID: 0}
+  moveSpeed: 10
   movoable: 1
-  ondeathUI: {fileID: 0}
-  ondeath: {fileID: 0}
 --- !u!61 &5290643065126256457
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1158,6 +1154,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1181526073199717607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290643065126256452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3fdb9c43f8903c429e4140047c5f60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 7734957825046758584}
+  moveSpeed: 10
 --- !u!1 &5290643065144402987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,6 +1545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5290643065914969933}
+  - component: {fileID: 5789141162519415370}
   m_Layer: 8
   m_Name: LaserMod
   m_TagString: Untagged
@@ -1560,6 +1573,28 @@ Transform:
   m_Father: {fileID: 5290643065977366856}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5789141162519415370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290643065914969934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058c4632fc443c645b96e8a645d6a40f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 6701637651710936604, guid: 2a542c639594feb47a6c45350074f8f8,
+    type: 3}
+  projectileSpawn: {fileID: 0}
+  spawnPoints:
+  - {fileID: 5290643064631853144}
+  - {fileID: 5290643065006095621}
+  - {fileID: 5290643064540267147}
+  - {fileID: 5290643064942673387}
+  - {fileID: 5290643064822233214}
+  - {fileID: 5290643065144402986}
 --- !u!1 &5290643065928053516
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,7 +31,7 @@ public class EnemyHealth : MonoBehaviour
         //when it hits the player
         if (col.gameObject.tag == "Player")
         {
-            col.gameObject.GetComponent<SpaceShip>().TakeDamage(20);
+            col.gameObject.GetComponent<PlayerHealth>().TakeDamage(10);
             TakeDamage(100);
         }
     }

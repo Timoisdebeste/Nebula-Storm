@@ -29,6 +29,7 @@ public class Plasma : MonoBehaviour
 
         //transform.position = pos;
     }
+
     //hit detection 
     void OnCollisionEnter2D(Collision2D col)
     {
