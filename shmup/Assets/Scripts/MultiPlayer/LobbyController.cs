@@ -48,6 +48,7 @@ public class LobbyController : MonoBehaviour
     {
         CurrentLobbyID = Manager.GetComponent<SteamLobby>().CurrentLobbyID;
         LobbyNameText.text = SteamMatchmaking.GetLobbyData(new CSteamID(CurrentLobbyID), "name");
+        Debug.Log("lobby name updated");
     }
 
     public void UpdatePlayerList()
@@ -62,6 +63,7 @@ public class LobbyController : MonoBehaviour
     {
         LocalPlayerObject = GameObject.Find("LocalGamePlayer");
         LocalplayerController = LocalPlayerObject.GetComponent<PlayerObjectController>();
+        Debug.Log("local palyer found");
     }
 
     public void CreateHostPlayerItem()
@@ -80,6 +82,7 @@ public class LobbyController : MonoBehaviour
             NewPlayerItem.transform.localScale = Vector3.one;
 
             PlayerListItems.Add(NewPlayerItemScript);
+            Debug.Log("host player item created");
         }
         PlayerItemCreated = true;
     }
@@ -102,6 +105,7 @@ public class LobbyController : MonoBehaviour
                 NewPlayerItem.transform.localScale = Vector3.one;
 
                 PlayerListItems.Add(NewPlayerItemScript);
+                Debug.Log("client player item created");
             }
         }
     }
@@ -116,6 +120,7 @@ public class LobbyController : MonoBehaviour
                 {
                     PlayerListItemScript.PlayerName = player.PlayerName;
                     PlayerListItemScript.SetPlayerValues();
+                    Debug.Log("player item updated");
                 }
             }
         }
@@ -140,6 +145,7 @@ public class LobbyController : MonoBehaviour
                 PlayerListItems.Remove(playerlistItemToRemove);
                 Destroy(ObjectToRemove);
                 ObjectToRemove = null;
+                Debug.Log("object removed");
             }
         }
     }

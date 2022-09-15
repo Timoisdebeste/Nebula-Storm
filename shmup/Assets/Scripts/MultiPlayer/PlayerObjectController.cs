@@ -33,6 +33,7 @@ public class PlayerObjectController : NetworkBehaviour
         gameObject.name = "LoacalGamePlayer";
         LobbyController.Instance.FindLocalPlayer();
         LobbyController.Instance.UpdateLobbyName();
+        Debug.Log("OnStartAuthority good");
     }
 
     public override void OnStartClient()
@@ -40,6 +41,8 @@ public class PlayerObjectController : NetworkBehaviour
         Manager.GamePlayers.Add(this);
         LobbyController.Instance.UpdateLobbyName();
         LobbyController.Instance.UpdatePlayerList();
+        Debug.Log("OnStartClient good");
+
     }
 
     public override void OnStopClient()
